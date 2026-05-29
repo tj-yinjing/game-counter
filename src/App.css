@@ -153,18 +153,47 @@ button {
 }
 
 .player-name {
-  width: 140px;
+  width: 160px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  gap: 8px;
+
+  padding: 10px;
+
+  border-right: 2px solid #222;
+}
+
+.player-name-text {
   font-size: 28px;
   font-weight: bold;
 
   color: #222;
 
-  border-right: 2px solid #222;
+  line-height: 1;
+}
+
+.player-stats {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 4px 8px;
+
+  border-radius: 8px;
+
+  background: rgba(0, 0, 0, 0.18);
+
+  font-size: 14px;
+  font-weight: bold;
+
+  backdrop-filter: blur(4px);
 }
 
 .character-area {
